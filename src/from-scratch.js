@@ -33,8 +33,9 @@ const weAreNotFriends = (person) => {
 };
 
 const listHobbies = (person) => {
-  for (let i = 0; i < person.hobbies; i++) {
-    console.log(`${person.name} likes ${person.hobbies[i]} `)
+  const { name, age, hobbies } = person
+  for (let i = 0; i < person.hobbies.length; i++) {
+    console.log(`${name} likes ${person.hobbies[i]}.`)
   };
 }
 

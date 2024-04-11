@@ -11,10 +11,18 @@ const haveBirthday = (person) => {
   person.age = person.age + 1
 };
 
-const becomeSecretAgent = () => {
+const becomeSecretAgent = (person, spyHandle) => {
+
 };
 
-const carMaker = () => {
+const carMaker = (name, maker, year) => {
+  const car = {
+    name: name,
+    maker: maker,
+    year: year,
+    needsOilChange: false
+  }
+  return car
 };
 
 const weAreNotFriends = () => {

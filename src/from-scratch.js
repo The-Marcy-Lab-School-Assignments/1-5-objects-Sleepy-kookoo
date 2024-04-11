@@ -40,10 +40,6 @@ const listHobbies = (person) => {
 }
 
 const getNextOpponent = (team) => {
-  // for (let i = 0; i < team.matches.teamName.length; i++) {
-  //   return team.teamName[i]
-  // }
-  // another way?
   if (team.matches[0] === undefined) {
     return null
   } else {
@@ -52,7 +48,7 @@ const getNextOpponent = (team) => {
 };
 
 const listAllKeys = (obj) => {
-
+  return Object.keys(obj)
 };
 
 const listAllValues = () => {

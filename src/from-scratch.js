@@ -28,10 +28,15 @@ const carMaker = (name, maker, year) => {
 };
 
 const weAreNotFriends = (person) => {
+  return person.friends.pop()
+
 };
 
-const listHobbies = () => {
-};
+const listHobbies = (person) => {
+  for (let i = 0; i < person.hobbies; i++) {
+    console.log(`${person.name} likes ${person.hobbies[i]} `)
+  };
+}
 
 const getNextOpponent = () => {
 };

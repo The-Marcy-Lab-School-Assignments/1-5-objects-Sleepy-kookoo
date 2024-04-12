@@ -55,8 +55,33 @@ const listAllValues = (obj) => {
   return Object.values(obj)
 };
 
-const convertToMatrix = () => {
+// const users = [
+//   {
+//     name: 'Sara',
+//     age: 30,
+//     bio: 'What a legend',
+//   },
+//   {
+//     name: 'Bob',
+//     age: 30,
+//     bio: "Kind of mean if we're being honest",
+//   },
+// ];
+
+const convertToMatrix = (arr) => {
+  let newArr = [];
+  if (arr[0] === null || arr[0] === undefined) return newArr;
+  newArr.push(Object.keys(arr[0]))
+
+  for (const items in arr) {
+    newArr.push(Object.values(arr[items]))
+  }
+
+  return newArr;
 };
+
+// console.log(convertToMatrix(users))
+
 
 module.exports = {
   coolGreeting,

@@ -1,3 +1,4 @@
+/** FEEDBACK: Great job! You have all test cases passing! */
 const coolGreeting = (person) => {
   let capName = person.name.toUpperCase()
   if (person.isCool === true) {
